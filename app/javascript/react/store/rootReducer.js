@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
-import {services} from '../modules/services'
+import {drawing} from '../modules/drawing'
 const rootReducer = combineReducers({
-  services
+  drawing
 })
 
 export default rootReducer
