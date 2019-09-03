@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
-import {drawing} from '../modules/drawing'
+import {drawing, addLine, addMovement} from '../modules/drawing'
+
 const rootReducer = combineReducers({
   drawing
 })
