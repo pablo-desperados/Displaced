@@ -1,9 +1,16 @@
 import React from 'react'
+import Canvas from '../containers/canvas'
+import { Provider } from 'react-redux'
+import configureStore from '../store/configureStore'
 
+const App = (props) => {
+  const store= configureStore()
+  return (
+    <Provider store={store}>
+      <Canvas/>
+     </Provider>
 
-export const App = (props) => {
-
-  return (<h1>Make It So React</h1>)
+  )
 }
 
 export default App
